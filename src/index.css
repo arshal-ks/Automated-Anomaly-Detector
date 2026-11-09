@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #EAF3FF;
+    --bg-secondary: #F4F8FF;
+    --card-bg: #FFFFFF;
+    --card-secondary: #F1F6FF;
+    --primary-blue: #3987E8;
+    --secondary-blue: #6AA8F5;
+    --light-blue: #DCEBFF;
+    --text-primary: #030405;
+    --text-secondary: #0d1b30;
+    --border-color: #E2EAF5;
+    --success: #45B88A;
+    --warning: #E9AC52;
+    --danger: #E87583;
+  }
+
+  body {
+    background-color: #EAF3FF;
+    color: #26364D;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Inter', system-ui, sans-serif;
+    overflow-x: hidden;
+    letter-spacing: -0.01em;
+  }
+
+  /* Soft Pastel Blue Scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #EAF3FF;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #C8DCF7;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #A6C8F5;
+  }
+}
+
+/* ==========================================================================
+   Premium Pastel Blue Design Language
+   ========================================================================== */
+
+.pastel-bg {
+  background-color: #EAF3FF;
+}
+
+.pastel-bg-secondary {
+  background-color: #F4F8FF;
+}
+
+.pastel-card {
+  background: #FFFFFF;
+  border: 1px solid #E2EAF5;
+  box-shadow: 0 10px 28px -4px rgba(57, 135, 232, 0.06), 0 2px 6px -1px rgba(57, 135, 232, 0.03);
+  border-radius: 20px;
+}
+
+.pastel-card:hover {
+  box-shadow: 0 14px 32px -4px rgba(57, 135, 232, 0.1), 0 4px 8px -2px rgba(57, 135, 232, 0.04);
+}
+
+.pastel-card-elevated {
+  background: #FFFFFF;
+  border: 1px solid #E2EAF5;
+  box-shadow: 0 18px 40px -6px rgba(57, 135, 232, 0.08), 0 4px 12px -2px rgba(57, 135, 232, 0.04);
+  border-radius: 24px;
+}
+
+.pastel-glass {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 234, 245, 0.9);
+  box-shadow: 0 10px 30px rgba(57, 135, 232, 0.07);
+}
+
+.pastel-pill {
+  background: #F1F6FF;
+  border: 1px solid #E2EAF5;
+  color: #3987E8;
+  border-radius: 14px;
+}
+
+.pastel-pill:hover {
+  background: #E7F1FF;
+  border-color: #DCEBFF;
+}
+
+.pastel-pill-active {
+  background: #3987E8;
+  color: #FFFFFF;
+  border: 1px solid #3987E8;
+  box-shadow: 0 4px 12px rgba(57, 135, 232, 0.28);
+}
+
+.soft-blue-gradient {
+  background: linear-gradient(135deg, #E7F1FF 0%, #D5E7FF 100%);
+}
+
+.soft-blue-border {
+  border-color: #E2EAF5;
+}
+
+/* Subtle Data Geometry Background Pattern */
+.pastel-pattern-bg {
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(220, 235, 255, 0.5) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(213, 231, 255, 0.6) 0%, transparent 40%),
+    linear-gradient(to right, rgba(226, 234, 245, 0.25) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(226, 234, 245, 0.25) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 36px 36px, 36px 36px;
+}
+
+/* Soft Neumorphic Shadows */
+.soft-neumorph-inset {
+  box-shadow: inset 0 2px 4px rgba(57, 135, 232, 0.05);
+}
+
+.soft-blue-shadow {
+  box-shadow: 0 8px 24px rgba(57, 135, 232, 0.08);
+}
+
+.btn-primary-blue {
+  background-color: #3987E8;
+  color: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(57, 135, 232, 0.3);
+  transition: all 0.2s ease;
+}
+
+.btn-primary-blue:hover {
+  background-color: #2E75D3;
+  box-shadow: 0 6px 18px rgba(57, 135, 232, 0.38);
+}
+
+.btn-secondary-blue {
+  background-color: #FFFFFF;
+  border: 1px solid #E2EAF5;
+  color: #3987E8;
+  border-radius: 16px;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary-blue:hover {
+  background-color: #F1F6FF;
+  border-color: #DCEBFF;
+}
